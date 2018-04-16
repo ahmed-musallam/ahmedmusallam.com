@@ -42,10 +42,13 @@
       fn();
       return;
     }
-    window.addEventListener("load", function () {
-      window.loaded = true;
-      fn();
-    });
+    if(!window.loadedCheck){
+      window.addEventListener("load", function () {
+        window.loaded = true;
+        fn();
+      });
+      window.loadedCheck = true;
+    }
   }
 
   /* init all */
