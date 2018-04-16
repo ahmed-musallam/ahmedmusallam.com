@@ -26,11 +26,17 @@
   }
 
   /* calculate loadTime and display it */
-  /* credit: http://www.phpied.com/this-page-loaded-in-x-seconds/ */
+  /* credit: http://www.phpied.com/this-page-loaded-in-x-seconds/ and https://timkadlec.com/ */
   function loadTime() {
-    var t = window.performance && performance.timing;
-    if (!t) return;
-    document.getElementById("load-time").innerHTML = ((t.loadEventEnd - t.navigationStart) / 1000).toString();
+    window.onload = function(){
+      setTimeout(function(){
+        window.performance = window.performance || window.mozPerformance || window.msPerformance || window.webkitPerformance || {};
+        var t = performance.timing || {};
+        if (!t) return;
+        var start = t.navigationStart, end = t.loadEventEnd, loadTime = (end - start) / 1000;
+        document.getElementById("load-time").innerHTML = loadTime;
+      }, 0); 
+    };
   }
 
   function init() {
