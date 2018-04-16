@@ -39,6 +39,7 @@
     };
   }
 
+  /* init all */
   function init() {
     menuToggle();
     loadTime();
