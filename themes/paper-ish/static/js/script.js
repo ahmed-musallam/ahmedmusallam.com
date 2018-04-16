@@ -43,5 +43,6 @@
   function init() {
     menuToggle();
     loadTime();
+    console.log("SITE INITIALIZED!");
   }
 })();
