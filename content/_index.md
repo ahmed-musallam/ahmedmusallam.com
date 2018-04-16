@@ -5,6 +5,8 @@ description: "introduction"
 date: 2018-04-13T22:55:10-05:00
 ---
 
+> Still a work in progress...
+
 My name is Ahmed and I'm a developer living in Minnesota. If this is your first time here, welcome! I hope you enjoy this site as much as I've enjoyed building it!
 
 From 9-5, I'm an AEM expert building solutions for some of the worlds top brands! 
