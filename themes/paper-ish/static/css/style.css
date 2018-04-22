@@ -525,9 +525,6 @@ body nav.menu {
   text-decoration: underline;
 }
 @media (max-width: 767px) {
-  .footer span:last-child {
-    display: block;
-  }
   .footer span:nth-child(2n) {
     display: none;
   }
