@@ -171,6 +171,18 @@ pre, code {
   bottom: 0;
   transform: rotate(-90deg);
 }
+/* Enable menu open/close */
+body.menu-is-open main, body.menu-is-open .footer {
+  display: none;
+}
+body.menu-is-open nav.menu {
+  display: block;
+}
+body nav.menu {
+  display: none;
+}
+/* // Enable menu open/close */
+
 .menu {
   height: 100vh;
   background: #000;
@@ -202,6 +214,16 @@ pre, code {
 .main {
   min-height: calc(100vh - 130px);
   overflow: hidden;
+}
+.main a {
+  color: orangered;
+  text-decoration: none;
+}
+.main a:visited {
+  color: lightsalmon;;
+}
+.main a:hover {
+  color: black;
 }
 .list-header,
 .first-entry > *,
