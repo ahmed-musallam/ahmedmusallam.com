@@ -305,10 +305,7 @@ body nav.menu {
 .first-entry .post-title {
   font-size: 50px;
 }
-.post-summary {
-  margin-top: 10px;
-  color: rgba(0, 0, 0, .4);
-}
+
 @media (max-width: 767px) {
   .first-entry {
     margin-bottom: 25px;
@@ -318,8 +315,13 @@ body nav.menu {
 .post-entry {
   position: relative;
   padding: 30px;
-  background: #fff;
   border-radius: 6px;
+  background: linear-gradient(to right, black 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .25s ease-out;
+  transition: all .25s ease-out;
+  border-left: solid 1em black;
 }
 .post-entry + .post-entry {
   margin-top: 25px;
@@ -328,8 +330,27 @@ body nav.menu {
   margin-top: 40px;
 }
 .post-entry:hover {
-  box-shadow: 0 5px 40px -5px rgba(0, 0, 0, .1);
+  box-shadow: 0 5px 40px -5px rgba(0,0,0,1);
+  background-position: left bottom;
+  color: white;
 }
+@media (max-width: 767px) {
+  .post-entry {
+    box-shadow: 0 0px 32px -5px rgba(0,0,0,0.5);
+    width: 95%;
+    font-size: 18px;
+    border-left: solid 0.5em black;
+  }
+}
+
+.post-entry .post-summary {
+  margin-top: 10px;
+  color: rgba(0, 0, 0, .6);
+}
+.post-entry:hover .post-summary {
+  color: rgba(255, 255, 255, .8);
+}
+
 .post-entry .post-title {
   font-size: 30px;
 }
