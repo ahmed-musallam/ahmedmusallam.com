@@ -19,6 +19,7 @@ If you've liked what you've read so far, checkout my [blog](/blog). You can also
 1. [Linkedin](https://www.linkedin.com/in/ahmedmusallam/) I know you want to.. so do it! new connections always welcome!
 2. [GitHub](https://github.com/ahmed-musallam)
 3. [StackOverflow](https://stackoverflow.com/users/5633515/ahmed-musallam)
+4. [Twitter](https://twitter.com/AhmedAtWork)
 
 
 If you'd like to contact me: <ahmed@ahmedmusallam.com>. You know what to do :)
