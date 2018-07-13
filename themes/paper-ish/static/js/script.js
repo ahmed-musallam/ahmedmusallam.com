@@ -116,6 +116,10 @@
   InstantClick.init();
   APP.init();
   InstantClick.on('change', function () {
+    // track page change
+    if (window.ga) {
+      ga('send', 'pageview', location.pathname + location.search);
+    }
     APP.init();
   });
 
