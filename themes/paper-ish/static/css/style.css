@@ -85,7 +85,7 @@ pre, code {
 .header .logo {
   width: 2.5em;
 }
-.header .logo *{
+.header .logo * {
   vertical-align: middle;
 }
 .title a {
