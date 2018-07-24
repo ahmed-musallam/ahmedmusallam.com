@@ -1,0 +1,21 @@
+.footer {
+    padding: 20px;
+    font-size: 13px;
+    line-height: 25px;
+    text-align: center;
+}
+
+.footer span {
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+    .footer span:nth-child(2n) {
+        display: none;
+    }
+}

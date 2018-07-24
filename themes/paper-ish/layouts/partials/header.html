@@ -26,7 +26,8 @@
   <meta name="author" content="{{ .Site.Params.author }}">
   {{ end -}}
   <!-- Styles -->
-  <link href="/css/style.css" rel="stylesheet">
+  {{ $styles := resources.Get "sass/main.scss" | resources.ToCSS }}
+  <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
   <!-- Favicons -->
   {{ partial "favico.html" . }}
   <!-- Generator -->
