@@ -116,10 +116,10 @@ code {
   margin-right: auto; }
   @media (max-width: 767px) {
     .narrow {
-      padding-left: 0.5em;
-      padding-right: 0.5em;
-      margin-left: 0.5em;
-      margin-right: 0.5em; } }
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      margin-left: 0.5rem;
+      margin-right: 0.5rem; } }
 
 .main {
   margin-top: 60px;
@@ -302,6 +302,43 @@ code {
 /* Post
   ------------------------------ */
 /* Post view */
+.post > .post-footer, .post > .post-content p,
+.post > .post-content pre,
+.post > .post-content table,
+.post > .post-content tbody,
+.post > .post-content blockquote,
+.post > .post-content ul,
+.post > .post-content ol,
+.post > .post-content dl,
+.post > .post-content h1,
+.post > .post-content h2,
+.post > .post-content h3,
+.post > .post-content h4,
+.post > .post-content h5,
+.post > .post-content h6 {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto; }
+  @media (max-width: 767px) {
+    .post > .post-footer, .post > .post-content p,
+    .post > .post-content pre,
+    .post > .post-content table,
+    .post > .post-content tbody,
+    .post > .post-content blockquote,
+    .post > .post-content ul,
+    .post > .post-content ol,
+    .post > .post-content dl,
+    .post > .post-content h1,
+    .post > .post-content h2,
+    .post > .post-content h3,
+    .post > .post-content h4,
+    .post > .post-content h5,
+    .post > .post-content h6 {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      margin-left: 0.5rem;
+      margin-right: 0.5rem; } }
+
 .post {
   width: 100%;
   margin-left: auto;
@@ -313,14 +350,6 @@ code {
     letter-spacing: .5px; }
   .post > .post-header .post-title {
     font-size: 40px; }
-  @media (max-width: 767px) {
-    .post > .post-header {
-      padding-left: 0.5rem;
-      padding-right: 0.5rem;
-      margin-left: 0.5rem;
-      margin-right: 0.5rem;
-      max-width: calc(100% - 1rem);
-      width: 100%; } }
   .post > .post-footer > .post-tags {
     margin-bottom: 30px; }
     .post > .post-footer > .post-tags li {
@@ -335,38 +364,9 @@ code {
         background: rgba(0, 0, 0, 0.08); }
     .post > .post-footer > .post-tags li + li {
       margin-left: 3px; }
-  @media (max-width: 767px) {
-    .post > .post-footer {
-      padding-left: 0.5rem;
-      padding-right: 0.5rem;
-      margin-left: 0.5rem;
-      margin-right: 0.5rem;
-      max-width: calc(100% - 1rem);
-      width: 100%; } }
   .post > .post-content {
     padding-top: 30px;
     word-wrap: break-word; }
-    @media (max-width: 767px) {
-      .post > .post-content p,
-      .post > .post-content pre,
-      .post > .post-content table,
-      .post > .post-content tbody,
-      .post > .post-content blockquote,
-      .post > .post-content ul,
-      .post > .post-content ol,
-      .post > .post-content dl,
-      .post > .post-content h1,
-      .post > .post-content h2,
-      .post > .post-content h3,
-      .post > .post-content h4,
-      .post > .post-content h5,
-      .post > .post-content h6 {
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;
-        max-width: calc(100% - 1rem);
-        width: 100%; } }
     .post > .post-content a {
       border-bottom: 1px solid rgba(0, 0, 0, 0.8); }
     .post > .post-content p,
@@ -420,7 +420,6 @@ code {
       background: rgba(0, 0, 0, 0.05);
       border-radius: 3px; }
     .post > .post-content blockquote {
-      margin: 0 0 0 -23px;
       padding: 0 0 0 20px;
       color: rgba(0, 0, 0, 0.6);
       font-style: italic;
