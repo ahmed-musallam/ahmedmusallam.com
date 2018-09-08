@@ -38,17 +38,12 @@
 <body class="{{if or (eq .Kind `page`) (eq .Kind `home`) }}single{{else}}list{{end}}">
   <header class="header-container">
     <div class="header">
-        {{ if .IsHome }}
         <div class="header-logo">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800"><a xlink:href="{{ `/` }}"><path d="M0 0h800v800H0z"/><path fill="#fff" d="M333 60v87h105L225 653h-79v87h261v-87h-87l213-506h35v593h87V60H333z"/></a></svg>
         </div>
+        {{ if .IsHome }}
         <h1 class="header-title"><a href="{{ `/` }}">{{ .Site.Title }}</a></h1>
         {{ else }}
-        <div class="header-logo">
-            <a href="{{ `/` }}">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800"><path d="M0 0h800v800H0z"/><path fill="#fff" d="M333 60v87h105L225 653h-79v87h261v-87h-87l213-506h35v593h87V60H333z"/></svg>
-            </a>
-        </div>
         <p class="header-title"><a href="{{ `/` }}">{{ .Site.Title }}</a></p>
         {{ end }}
         <button class="js-menu-toggle header-menu" type="button">
