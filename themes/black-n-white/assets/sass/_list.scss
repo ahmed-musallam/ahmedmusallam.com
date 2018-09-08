@@ -1,0 +1,50 @@
+
+/* Post card */
+
+.post-card {
+  position: relative;
+  padding: 30px;
+  border-radius: 6px;
+  background: linear-gradient(to right, black 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .25s ease-out;
+  transition: all .25s ease-out;
+  border-left: solid 1em black;
+  +.post-card {
+      margin-top: 25px;
+  }
+  &:first-child {
+      margin-top: 40px;
+  }
+  &:hover {
+      box-shadow: 0 5px 40px -5px rgba(0, 0, 0, 1);
+      background-position: left bottom;
+      color: white;
+      > .post-card-summary {
+          color: rgba(255, 255, 255, .8);
+      }
+  }
+  @media (max-width: 767px) {
+      box-shadow: 0 0px 32px -5px rgba(0, 0, 0, 0.5);
+      font-size: 18px;
+      padding: 20px;
+      border-left: solid 0.5em black;
+  }
+
+  > .post-card-summary {
+      margin-top: 10px;
+      color: rgba(0, 0, 0, .6);
+  }
+  > header > .post-card-title {
+      font-size: 30px;
+      margin-top: 0px;
+  }
+  > .post-card-link {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+  }
+}

@@ -3,6 +3,10 @@ title: "And so it begins!"
 description: "A short story of how I built this site."
 date: 2018-04-21T20:00:10-05:00
 type: "single"
+tags:
+  - tagging
+  - works
+  - lol
 ---
 Dramatic much? nope! It's exciting!
 
