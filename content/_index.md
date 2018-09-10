@@ -15,7 +15,8 @@ Take a look at my [**blog**](/blog). or checkout my various profiles:
 [**Linkedin**](https://www.linkedin.com/in/ahmedmusallam/)<br/>
 [**GitHub**](https://github.com/ahmed-musallam)<br/>
 [**StackOverflow**](https://stackoverflow.com/users/5633515/ahmed-musallam)<br/>
-[**Twitter**](https://twitter.com/AhmedAtWork)
+[**Twitter**](https://twitter.com/AhmedAtWork)<br/>
+[**DEV**](https://dev.to/ahmedmusallam)
 
 Or connect with me directly:
 **<ahmed@ahmedmusallam.com>**<br/>
