@@ -92,9 +92,16 @@ a {
 
     &:visited {
         color: lightsalmon;
+        .icon > svg {
+            fill: lightsalmon;
+        }
     }
     &:hover {
         color: black;
+        .icon svg {
+            fill: black;
+        }
+        
     }
     
 }
@@ -154,4 +161,21 @@ code {
     @media (max-width: 767px) {
         min-height: calc(100vh - 155px);
     }
+}
+
+.icon {
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+    > svg {
+        width: 100%;
+        height: 100%;
+    }
+    .devto {
+        padding: 3px;
+        border-radius: 9px;
+    }
+}
+.m-2 {
+    margin: 8px
 }

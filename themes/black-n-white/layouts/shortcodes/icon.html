@@ -1,0 +1,3 @@
+{{ $name := .Get "name" }}
+{{$name := (print "icons/" $name ".svg")}}
+<i class="{{ .Get "class" }}">{{ partial $name .}}</i>

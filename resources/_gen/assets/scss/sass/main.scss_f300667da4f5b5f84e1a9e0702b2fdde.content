@@ -77,8 +77,12 @@ a {
   text-decoration: none; }
   .main a:visited {
     color: lightsalmon; }
+    .main a:visited .icon > svg {
+      fill: lightsalmon; }
   .main a:hover {
     color: black; }
+    .main a:hover .icon svg {
+      fill: black; }
 
 figure {
   margin: 0; }
@@ -128,6 +132,20 @@ code {
   @media (max-width: 767px) {
     .main {
       min-height: calc(100vh - 155px); } }
+
+.icon {
+  width: 45px;
+  height: 45px;
+  display: inline-block; }
+  .icon > svg {
+    width: 100%;
+    height: 100%; }
+  .icon .devto {
+    padding: 3px;
+    border-radius: 9px; }
+
+.m-2 {
+  margin: 8px; }
 
 .header-container {
   background: #000;
