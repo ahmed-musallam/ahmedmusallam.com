@@ -57,6 +57,7 @@
     word-wrap: break-word;
     p,
     pre,
+    code,
     table,
     tbody,
     blockquote,
@@ -110,10 +111,6 @@
     dd~dd {
       margin-top: 10px;
     }
-    pre,
-    table {
-      margin: 30px 0px 30px 0px;
-    }
     table {
       border-collapse: collapse;
       border-spacing: 0;
@@ -126,14 +123,14 @@
         text-align: left;
       }
     }
-    pre,
     code {
-      width: 100%;
-      max-width: 100%;
-      padding: 20px 0px 20px 0px;
+      padding: 2px 5px;
+      font-size: 17px;
+      background: rgba(0, 0, 0, .05);
+      border-radius: 3px;
     }
-    code {
-      padding: 3px 6px;
+    pre > code {
+      padding: 1em 1em;
       font-size: 15px;
       background: rgba(0, 0, 0, .05);
       border-radius: 3px;
