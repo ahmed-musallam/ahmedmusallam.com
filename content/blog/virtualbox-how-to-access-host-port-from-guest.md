@@ -1,6 +1,6 @@
 ---
 title: "VirtualBox: How To Access Host Port From Guest"
-description: "A short story of how I built this site."
+description: "A guide to setting up host to guest port-forwarding in virtualbox"
 date: 2019-03-21T11:00:10-05:00
 type: "single"
 tags:
@@ -38,7 +38,7 @@ basically run the one of the following commands to get your local IP:
 > - `ipconfig getifaddr en1` if connected via ethernet.
 > - `ipconfig getifaddr en3` if connected via a Thunderbolt-to-ethernet adaptor.
 
-## Accessing Server running on Your Host From Your Guest
+## Accessing Server Running on Your Host From Your Guest
 
 now that you have the IP, you can use it to access the forwarded port from your guest VM.
 
