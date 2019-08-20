@@ -1,7 +1,7 @@
 {{ partial "header.html" . }}
 
 <header class="narrow">
-  <h1 class="title">Recent Blog Posts</h1>
+  <h1 class="title"> {{.Params.listTitle | default "Recent Blog Posts" }}</h1>
 </header>
 
 {{ $paginator := .Paginate (where .Pages ".Params.type" "!=" "page") (index .Site.Params "paginate" | default 10) }}
