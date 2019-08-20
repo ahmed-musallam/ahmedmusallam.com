@@ -5065,6 +5065,9 @@ sup {
 sub {
   bottom: -.25em;
 }
+ng-component.app-root {
+  top: 45px;
+}
 
 ion-app,
 ion-nav,
@@ -5072,7 +5075,7 @@ ion-tab,
 ion-tabs,
 .app-root {
   position: absolute;
-  top: 45px;
+  top: 0;
   left: 0;
   z-index: 0;
   display: block;
