@@ -5065,7 +5065,7 @@ sup {
 sub {
   bottom: -.25em;
 }
-ng-component.app-root {
+ion-app.app-root {
   top: 45px;
 }
 
